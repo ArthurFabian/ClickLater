@@ -1,0 +1,14 @@
+/*var target;
+
+self.port.on("updateCoordinates",function (coords) {
+	target = document.elementFromPoint(coords.x,coords.y);
+});*/
+
+
+
+
+self.on("click", function () {
+	var delay = parseInt(prompt('Enter delay (ms)'));
+	self.postMessage(delay);
+	});
+
